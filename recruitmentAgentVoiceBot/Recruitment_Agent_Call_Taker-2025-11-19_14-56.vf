@@ -1,0 +1,5158 @@
+{
+  "version": {
+    "_version": 13.04,
+    "autoSaveFromRestore": false,
+    "canvasTemplates": [],
+    "components": [],
+    "creatorID": 163967,
+    "manualSave": false,
+    "model": {},
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        },
+        {
+          "key": "6797c2110cfd6c00ccbedd9f",
+          "name": "No",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "I'm good",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "I think I'm good thanks",
+              "slots": []
+            },
+            {
+              "text": "Definitely not",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "Under no circumstances",
+              "slots": []
+            },
+            {
+              "text": "Not at all",
+              "slots": []
+            },
+            {
+              "text": "Nope, not at all",
+              "slots": []
+            },
+            {
+              "text": "No way",
+              "slots": []
+            },
+            {
+              "text": "By no means",
+              "slots": []
+            },
+            {
+              "text": "Not in the slightest",
+              "slots": []
+            },
+            {
+              "text": "No chance",
+              "slots": []
+            },
+            {
+              "text": "Absolutely not",
+              "slots": []
+            },
+            {
+              "text": "Not at all",
+              "slots": []
+            },
+            {
+              "text": "Negative",
+              "slots": []
+            },
+            {
+              "text": "Sorry, no",
+              "slots": []
+            },
+            {
+              "text": "Definitely not",
+              "slots": []
+            },
+            {
+              "text": "That's wrong",
+              "slots": []
+            },
+            {
+              "text": "Incorrect",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "No",
+              "slots": []
+            }
+          ],
+          "noteID": "qi4tn060j",
+          "description": "Trigger this intent then the user responds negatively"
+        },
+        {
+          "key": "6797c2660cfd6c00ccbeddd1",
+          "name": "Yes",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Definitely",
+              "slots": []
+            },
+            {
+              "text": "Indeed",
+              "slots": []
+            },
+            {
+              "text": "Of course",
+              "slots": []
+            },
+            {
+              "text": "Certainly",
+              "slots": []
+            },
+            {
+              "text": "Without question",
+              "slots": []
+            },
+            {
+              "text": "Sure",
+              "slots": []
+            },
+            {
+              "text": "Definitely",
+              "slots": []
+            },
+            {
+              "text": "You bet",
+              "slots": []
+            },
+            {
+              "text": "Without a doubt",
+              "slots": []
+            },
+            {
+              "text": "By all means",
+              "slots": []
+            },
+            {
+              "text": "Agreed",
+              "slots": []
+            },
+            {
+              "text": "Absolutely",
+              "slots": []
+            },
+            {
+              "text": "That's correct",
+              "slots": []
+            },
+            {
+              "text": "Indeed",
+              "slots": []
+            },
+            {
+              "text": "Affirmative",
+              "slots": []
+            },
+            {
+              "text": "You are right",
+              "slots": []
+            },
+            {
+              "text": "Correct",
+              "slots": []
+            },
+            {
+              "text": "Yep",
+              "slots": []
+            },
+            {
+              "text": "Yes",
+              "slots": []
+            }
+          ],
+          "noteID": "qi4to06f9",
+          "description": "Trigger this intent when the user responds positively."
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "globalNoMatch": {
+          "type": "static",
+          "prompt": {
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Sorry, I didn’t get that. Please try again."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "messageDelay": {
+          "durationMilliseconds": 500
+        },
+        "defaultVoice": "elevenlabs:eleven_turbo_v2_5:ZF6FPAbjXT4488VcRRnw",
+        "deepgramASR": {
+          "silenceWaitMS": 10,
+          "punctuationWaitMS": 200,
+          "partialWaitMS": 1000,
+          "interruptionWaitWords": 1,
+          "audioCue": null
+        }
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logo.png",
+        "color": "#397DFF",
+        "description": "Hi, how can I help you today?",
+        "feedback": false,
+        "image": "https://cdn.voiceflow.com/assets/logo.png",
+        "persistence": "localStorage",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Your AI agent",
+        "watermark": true,
+        "audioInterface": true
+      },
+      "platform": "webchat"
+    },
+    "programResources": {
+      "agents": {
+        "68f0fa28f431dd17f721a198": {
+          "name": "Name getter agent",
+          "settings": {
+            "model": "claude-4-sonnet",
+            "maxTokens": 5000,
+            "temperature": 0.3,
+            "reasoningEffort": null
+          },
+          "cardTool": null,
+          "apiTools": [],
+          "pathTools": [
+            {
+              "id": "68f0fa56f431dd17f721a1e5",
+              "name": "Name confirmed",
+              "variables": [
+                {
+                  "name": "callers_name",
+                  "required": true,
+                  "description": "Populate with the callers name as its been confirmed"
+                }
+              ],
+              "description": "When you have gathered the callers full name and confirmed you heard correctly"
+            },
+            {
+              "id": "68f0faf1ddca33ae1f156b33",
+              "name": "Name not confirmed",
+              "variables": [],
+              "description": "You could not confirm the callers name, or they refused to give it to you"
+            }
+          ],
+          "buttonTool": null,
+          "description": "",
+          "carouselTool": null,
+          "instructions": "# Objective\nGet the callers name, and confirm you heard it correctly.\n\n# Information\nCaller id: {caller_id} \nCurrent time: {current_time} \n",
+          "functionTools": [],
+          "webSearchTool": null,
+          "callForwardTool": null,
+          "integrationTools": [],
+          "knowledgeBaseTool": {
+            "enabled": true,
+            "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+          },
+          "mcpIntegrationTools": []
+        },
+        "68f0fdabddca33ae1f156cb3": {
+          "name": "Job Seeker Status Confirmer",
+          "settings": {
+            "model": "claude-4-sonnet",
+            "maxTokens": 5000,
+            "temperature": 0.3,
+            "reasoningEffort": null
+          },
+          "cardTool": null,
+          "apiTools": [],
+          "pathTools": [
+            {
+              "id": "68f0fe9dddca33ae1f156d9a",
+              "name": "looking for work",
+              "variables": [],
+              "description": "when the caller indicates they are currently looking for work, or will be very soon"
+            },
+            {
+              "id": "68f0feb7ddca33ae1f156db3",
+              "name": "not looking for work",
+              "variables": [],
+              "description": "the caller indicates they are NOT looking for work, or you could establish if they are looking for work"
+            }
+          ],
+          "buttonTool": null,
+          "description": "",
+          "carouselTool": null,
+          "instructions": "# Objective\n- Confirm the caller is looking for work\n- the outcome is either they are looking for work (or will be in the near future) OR they are NOT looking for work\n\n# Process\n- First Check vf_memory and see if they have already indicated they are looking for work, if they have, then you dont need to say anything, just trigger the \"looking for work\" exit condition\n- If they have NOT already indicated if they are looking for work, then ask \"Are you currently looking for work?\" and trigger the appropriate exit condition.\n\n# Guidance\n- DO NOT ask questions, then NOT give the caller an opportunity to answer. It makes for a bad user experience, which we are trying to preserve\n\n# Information\nCaller name: {callers_name} \nCurrent date: {current_time} ",
+          "functionTools": [],
+          "webSearchTool": null,
+          "callForwardTool": null,
+          "integrationTools": [],
+          "knowledgeBaseTool": {
+            "enabled": true,
+            "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+          },
+          "mcpIntegrationTools": []
+        },
+        "690a0d7ed2807b70a17a00fc": {
+          "name": "Profession Agent",
+          "settings": {
+            "model": "claude-4-sonnet",
+            "maxTokens": 5000,
+            "temperature": 0.3,
+            "reasoningEffort": null
+          },
+          "cardTool": null,
+          "apiTools": [],
+          "pathTools": [
+            {
+              "id": "690a0e6ed2807b70a17a014f",
+              "name": "Standard Skills",
+              "variables": [
+                {
+                  "name": "profession",
+                  "required": true,
+                  "description": null
+                }
+              ],
+              "description": "When the users stated profession is in the \"Standard professions\" list"
+            },
+            {
+              "id": "690a0ecfd2807b70a17a0156",
+              "name": "High value skill",
+              "variables": [
+                {
+                  "name": "profession",
+                  "required": true,
+                  "description": ""
+                }
+              ],
+              "description": "The user's profession appears in High value skills list"
+            },
+            {
+              "id": "690a0ef8d2807b70a17a015c",
+              "name": "unknown",
+              "variables": [
+                {
+                  "name": "profession",
+                  "required": true,
+                  "description": null
+                }
+              ],
+              "description": "When the profession cannot be classified as either standard or high value"
+            }
+          ],
+          "buttonTool": null,
+          "description": "",
+          "carouselTool": null,
+          "instructions": "# Objective\n- Confirm which trade they are looking for work in.  (Check \"Process\") \n- The outcome from this section is one of:\n  - standard skills (as per the list below)\n  - high value skill (as per the list below)\n  - unknown skill (when the skill does not appear in either \"Standard skills\" or \"High value skills\"\n\n# Process\n- Check vf_memory. If they have already mentioned their trade, do NOT ask them for their trade, just confirm what they have already indicated, and await their confirmation. \n## Example\n### vf_memory\nMy name is Dylan and Im a Joiner\n### Your response\nDylan, you mentioned you are a joiner, is that correct?\n\n- Once you have confirmation, check their trade against \"Standard Skills\" and \"High value skills\" below and trigger the appropriate exit condition. If the trade does not appear on either list, trigger the \"unknown\" exit condition.\n\nClassify the work they are looking for:\n# Standard skills:\n- Labourer / General Labourer / Skilled Labourer\n- Brick Layer / Brickie\n- Painter / Decorator\n- Joiner\n- Steel Worker\n- Ground Worker\n- Plumber\n- Electrician\n- Fork Lift Driver\n- Telehandler \n- Banksman\n- Slinger\n- Plasterer\n\n# High value skills:\n- Quantity Surveyor / Quantity surveying / QS\n- Commercial Manager\n- Site Manager\n- Project Manager\n- Planner\n- Design Manager\n- Estimator\n\n# Guidance\n- Refer to them using their first name only\n\n# Current date\nThe users name is {68d68064dd5705542cb9899b}  and they ARE looking for work\ncurrent date is: {68d68c439a61f829e060b613} ",
+          "functionTools": [],
+          "webSearchTool": null,
+          "callForwardTool": null,
+          "integrationTools": [],
+          "knowledgeBaseTool": {
+            "enabled": false,
+            "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+          },
+          "mcpIntegrationTools": []
+        },
+        "690a139ad2807b70a17a033b": {
+          "name": "confirmation agent",
+          "settings": {
+            "model": "claude-4-sonnet",
+            "maxTokens": 5000,
+            "temperature": 0.3,
+            "reasoningEffort": null
+          },
+          "cardTool": null,
+          "apiTools": [],
+          "pathTools": [
+            {
+              "id": "690a13bed2807b70a17a0342",
+              "name": "affirmative",
+              "variables": [],
+              "description": "the user confirms with an affirmative utterance"
+            },
+            {
+              "id": "690a13d5d2807b70a17a0345",
+              "name": "negative",
+              "variables": [],
+              "description": "when the user gives a negative utterance"
+            }
+          ],
+          "buttonTool": null,
+          "description": "",
+          "carouselTool": null,
+          "instructions": "# Objective\n- Listen for affirmative comments like yes, yeah, correct, thats the one, yep, correct and so on. In which case trigger the \"affirmative\" exit condition\n- Listen for negative comments like no, nah, nope, no thats not right, incorrect and so on, in which case trigger the \"negative\" exit condition",
+          "functionTools": [],
+          "webSearchTool": null,
+          "callForwardTool": null,
+          "integrationTools": [],
+          "knowledgeBaseTool": {
+            "enabled": true,
+            "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+          },
+          "mcpIntegrationTools": []
+        }
+      },
+      "prompts": {},
+      "apiTools": {},
+      "messages": {
+        "68f0f91ff431dd17f721a0c7": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Hi There! You're through to Dylans Recruitment! Just for full disclosure, Im an AI that can help you get registered with us, and find you your next job.  Please speak clearly and keep in mind I might take a little longer to respond that a real person, so please bare with me. "
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f0fb42ddca33ae1f156b65": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Thanks for calling, but without your name we cannot continue. Feel free to visit dylansrecruitment.com"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f0fee6ddca33ae1f156e06": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Thanks but I couldnt confirm if you are looking for work or not, and as such, I must direct you to dylansrecruitment.com"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "690a1118f2acd509a79bc9c6": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "There was an error.  "
+                        },
+                        {
+                          "text": "{js_error}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "690a1118f2acd509a79bc9c9": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "There was a fail condition"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "690a1118f2acd509a79bc9cc": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Let me just read that number back to you"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "690a1118f2acd509a79bc9cf": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "The number you entered was "
+                        },
+                        {
+                          "text": "{read_back_caller_id}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Is that correct?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "690a1118f2acd509a79bc9d2": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "ok, lets have another go"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "690a1118f2acd509a79bc9d5": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Please enter your full phone number using the keypad, followed by hash"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "690a1118f2acd509a79bc9d8": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "I need a number starting zero seven."
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "690a1501d2807b70a17a03cb": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "So that we can contact you with gerat job offers, we will now ask for your phone number"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "690a19eed2807b70a17a068a": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Thank you for calling. We've sent you a text with next steps. Please complete those and we will send you through suitable roles in the near future."
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        }
+      },
+      "globalPrompts": null,
+      "integrationTools": {},
+      "mcpIntegrationTools": {}
+    },
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "Recruitment Agent Call Taker",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "platform": "webchat",
+        "slotsMap": {},
+        "extraSlots": [],
+        "cmsEntities": {},
+        "extraIntents": [],
+        "cmsVariables": {
+          "sessions": {
+            "isSystem": true,
+            "description": "The number of times a particular user has opened the app.",
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "description": "The user's unique ID.",
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+            "defaultValue": null
+          },
+          "locale": {
+            "isSystem": true,
+            "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "description": "The agent's last response (text/speak) in a string.",
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "description": "The object containing the last event that the user client has triggered.",
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "description": "The user's last utterance in a text string.",
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+            "defaultValue": null
+          },
+          "current_time": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "caller_id": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": "077884299100"
+          },
+          "callers_name": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "vf_date": {
+            "isSystem": true,
+            "description": "Current date in the format \"Jan 1, 2025\". You can modify the timezone in project settings.",
+            "defaultValue": null
+          },
+          "vf_time": {
+            "isSystem": true,
+            "description": "Current time in the format \"16:37\". You can modify the timezone in project settings.",
+            "defaultValue": null
+          },
+          "vf_day": {
+            "isSystem": true,
+            "description": "Current day of month in the format \"1\". You can modify the timezone in project settings.",
+            "defaultValue": null
+          },
+          "vf_month": {
+            "isSystem": true,
+            "description": "Current month in the format \"January\". You can modify the timezone in project settings.",
+            "defaultValue": null
+          },
+          "vf_year": {
+            "isSystem": true,
+            "description": "Current year in the format \"2025\". You can modify the timezone in project settings.",
+            "defaultValue": null
+          },
+          "vf_now": {
+            "isSystem": true,
+            "description": "Current date and time in the format \"Jan 1, 2025, 16:37\". You can modify the timezone in project settings.",
+            "defaultValue": null
+          },
+          "vf_user_timezone": {
+            "isSystem": true,
+            "description": "The user's timezone in the format \"America/Toronto\", if available. Defaults to the project timezone.",
+            "defaultValue": null
+          },
+          "profession": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "the profession of the caller",
+            "defaultValue": null
+          },
+          "code": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "a digit pressed on the users keypad",
+            "defaultValue": null
+          },
+          "code_length": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "the number of digits entered by the user",
+            "defaultValue": null
+          },
+          "called_id_confirmed": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "boolean. If the caller id has been confirmed by the user",
+            "defaultValue": null
+          },
+          "js_error": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "read_back_caller_id": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "sms_text": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "the text to send the user",
+            "defaultValue": null
+          }
+        },
+        "usedIntentsSet": [],
+        "functionDefinitions": {
+          "690a17249467990b08ddde5c": {
+            "name": "Twilio: Send SMS",
+            "codeId": "68f0f8e3f431dd17f721a0a5-690a17249467990b08ddde5c-pcbcebcm.js",
+            "pathCodes": [
+              "success",
+              "error"
+            ],
+            "inputVars": {
+              "authToken": {
+                "type": "text",
+                "description": ""
+              },
+              "fromNumber": {
+                "type": "text",
+                "description": "+447307250223"
+              },
+              "toNumber": {
+                "type": "text",
+                "description": "+447788435282"
+              },
+              "message": {
+                "type": "text",
+                "description": "Hello this is a test from Voiceflow!"
+              },
+              "accountSID": {
+                "type": "text",
+                "description": ""
+              }
+            },
+            "outputVars": {
+              "response": {
+                "type": "text",
+                "description": "Response body from Twilio API"
+              }
+            },
+            "description": "This function sends an SMS with Twilio"
+          }
+        },
+        "referencedAgentsIDs": [
+          "690a139ad2807b70a17a033b",
+          "68f0fa28f431dd17f721a198",
+          "68f0fdabddca33ae1f156cb3",
+          "690a0d7ed2807b70a17a00fc"
+        ],
+        "referencedPromptIDs": [],
+        "referencedAPIToolIDs": [],
+        "referencedResponseIDs": [
+          "690a1118f2acd509a79bc9d5",
+          "690a1118f2acd509a79bc9c9",
+          "690a1118f2acd509a79bc9c6",
+          "690a1118f2acd509a79bc9cc",
+          "690a1118f2acd509a79bc9cf",
+          "690a1118f2acd509a79bc9d8",
+          "690a1118f2acd509a79bc9d2",
+          "68f0f91ff431dd17f721a0c7",
+          "68f0fb42ddca33ae1f156b65",
+          "68f0fee6ddca33ae1f156e06",
+          "690a1501d2807b70a17a03cb",
+          "690a19eed2807b70a17a068a"
+        ],
+        "referencedIntegrationToolIDs": [],
+        "referencedMCPIntegrationToolIDs": [],
+        "interfaces": [],
+        "permissions": [],
+        "usedEventsSet": [],
+        "goToIntentsSet": []
+      },
+      "settings": {},
+      "platform": "webchat"
+    },
+    "settings": {
+      "widget": {
+        "type": "chat",
+        "chat": {
+          "voiceInput": true,
+          "voiceOutput": true,
+          "renderMode": "widget",
+          "headerImage": {
+            "enabled": true
+          },
+          "agentImage": {
+            "enabled": false
+          },
+          "banner": {
+            "title": "Your AI agent",
+            "description": "How can I help you today?",
+            "enabled": true
+          },
+          "placeholderText": "Message...",
+          "disclaimer": {
+            "enabled": false,
+            "title": "Privacy notice",
+            "description": "Before we can proceed with your conversation, we kindly ask you to review and accept our privacy policy, outlining how we handle and protect your personal information throughout our services.",
+            "primaryButtonText": "Submit",
+            "secondaryButtonText": "Privacy policy",
+            "secondaryButtonURL": ""
+          },
+          "aiDisclaimer": {
+            "text": "Generated by AI, double-check for accuracy.",
+            "enabled": false
+          },
+          "handoffToAgentImageURL": ""
+        },
+        "voice": {
+          "renderMode": "full",
+          "content": {
+            "talkingText": "Talk to interrupt",
+            "endButtonText": "End",
+            "listeningText": "Listening...",
+            "startButtonText": "Start a call",
+            "callToActionText": "How can I help you?"
+          }
+        },
+        "common": {
+          "sideSpacing": "20",
+          "bottomSpacing": "20",
+          "position": "right",
+          "fontFamily": "UCity Pro",
+          "primaryColor": {
+            "color": "#397DFF",
+            "palette": {
+              "50": "#E7F5FD",
+              "100": "#C6E4FB",
+              "200": "#A2D2FA",
+              "300": "#87BFFB",
+              "400": "#659FFD",
+              "500": "#397DFF",
+              "600": "#2F68DB",
+              "700": "#264EB4",
+              "800": "#1C368E",
+              "900": "#0F1E61"
+            }
+          },
+          "poweredBy": true,
+          "launcher": {
+            "type": "both",
+            "text": "Test your agent"
+          },
+          "footerLink": {
+            "enabled": false
+          },
+          "persistence": "localStorage"
+        },
+        "security": {
+          "approvedDomains": {
+            "enabled": false,
+            "domains": ""
+          },
+          "disableTranscript": false
+        }
+      },
+      "memory": {
+        "turns": 25
+      },
+      "llmFallback": {
+        "models": {
+          "open-ai": {
+            "*": {
+              "provider": "anthropic",
+              "model": "claude-4-sonnet"
+            }
+          },
+          "anthropic": {
+            "*": {
+              "provider": "open-ai",
+              "model": "gpt-4.1-2025-04-14"
+            }
+          },
+          "groq": {
+            "*": {
+              "provider": "anthropic",
+              "model": "claude-4-sonnet"
+            }
+          },
+          "google": {
+            "*": {
+              "provider": "anthropic",
+              "model": "claude-4-sonnet"
+            }
+          }
+        }
+      },
+      "intentClassification": {
+        "type": "rag",
+        "params": {
+          "model": "claude-3.5-haiku",
+          "temperature": 0.1
+        },
+        "promptWrapper": null
+      },
+      "voice": {
+        "failureMessage": "We’re sorry, but the call cannot be completed at this time. Please try again later.",
+        "hasCallRecording": true,
+        "tts": {
+          "provider": "elevenlabs",
+          "voice": "ZF6FPAbjXT4488VcRRnw",
+          "model": "eleven_turbo_v2_5",
+          "settings": {}
+        }
+      },
+      "globalNoMatch": {
+        "type": "static",
+        "prompt": [
+          {
+            "text": [
+              "Sorry, I didn’t get that. Please try again."
+            ]
+          }
+        ]
+      }
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "64dbb6696a8fab0013dba194"
+      }
+    ],
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory",
+      "current_time",
+      "caller_id",
+      "callers_name",
+      "vf_date",
+      "vf_time",
+      "vf_day",
+      "vf_month",
+      "vf_year",
+      "vf_now",
+      "vf_user_timezone",
+      "profession",
+      "code",
+      "code_length",
+      "called_id_confirmed",
+      "js_error",
+      "read_back_caller_id",
+      "sms_text"
+    ],
+    "_id": "68f0f8e3f431dd17f721a0a5",
+    "updatedAt": "2025-11-04T15:56:05.371Z",
+    "publishedAt": "2024-09-27T16:54:27.996Z",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64dbb6696a8fab0013dba194"
+        ],
+        "rootDiagramID": "64dbb6696a8fab0013dba194",
+        "updatedBy": 163967,
+        "updatedAt": "2025-10-16T13:53:39.802Z"
+      }
+    ],
+    "projectID": "68f0f8e3f431dd17f721a0a4",
+    "rootDiagramID": "64dbb6696a8fab0013dba194",
+    "templateDiagramID": "64dbb6696a8fab0013dba195"
+  },
+  "diagrams": {
+    "690a110cf2acd509a79bc9c5": {
+      "name": "Caller ID confirmation",
+      "type": "COMPONENT",
+      "zoom": 100,
+      "nodes": {
+        "690a110c86dc1f0007e80af0": {
+          "nodeID": "690a110c86dc1f0007e80af0",
+          "type": "start",
+          "data": {
+            "name": "Enter",
+            "color": "#56b365",
+            "triggers": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "id": "690a110c86dc1f0007e80aef",
+                  "type": "next",
+                  "data": {},
+                  "target": "690a111833650497c4687e41"
+                }
+              },
+              "dynamic": []
+            },
+            "steps": []
+          },
+          "coords": [
+            -1174.331915271189,
+            -14.490822202783189
+          ]
+        },
+        "690a111833650497c4687e3d": {
+          "type": "block",
+          "data": {
+            "name": "Process Key Press",
+            "color": "",
+            "triggers": [],
+            "steps": [
+              "690a111833650497c4687e51"
+            ]
+          },
+          "nodeID": "690a111833650497c4687e3d",
+          "coords": [
+            124.71401007674808,
+            -299.68723559166335
+          ]
+        },
+        "690a111833650497c4687e3f": {
+          "type": "block",
+          "data": {
+            "name": "New Block 10",
+            "color": "",
+            "triggers": [],
+            "steps": [
+              "690a111833650497c4687e58"
+            ]
+          },
+          "nodeID": "690a111833650497c4687e3f",
+          "coords": [
+            999.5327292827037,
+            -559.6185006604674
+          ]
+        },
+        "690a111833650497c4687e41": {
+          "type": "block",
+          "data": {
+            "name": "Enter a phone number with dtmf",
+            "color": "",
+            "triggers": [],
+            "steps": [
+              "690a111833650497c4687e5e",
+              "690a111833650497c4687e61",
+              "690a111833650497c4687e64"
+            ]
+          },
+          "nodeID": "690a111833650497c4687e41",
+          "coords": [
+            -505.5361760189744,
+            -224.17709839358156
+          ]
+        },
+        "690a111833650497c4687e43": {
+          "type": "block",
+          "data": {
+            "name": "New Block 13",
+            "color": "",
+            "triggers": [],
+            "steps": [
+              "690a111833650497c4687e67"
+            ]
+          },
+          "nodeID": "690a111833650497c4687e43",
+          "coords": [
+            706.118296015534,
+            263.36240383441157
+          ]
+        },
+        "690a111833650497c4687e45": {
+          "type": "block",
+          "data": {
+            "name": "New Block 12",
+            "color": "",
+            "triggers": [],
+            "steps": [
+              "690a111833650497c4687e6a"
+            ]
+          },
+          "nodeID": "690a111833650497c4687e45",
+          "coords": [
+            516.1388426389155,
+            43.99005965940981
+          ]
+        },
+        "690a111833650497c4687e47": {
+          "type": "block",
+          "data": {
+            "name": "New Block 5",
+            "color": "",
+            "triggers": [],
+            "steps": [
+              "690a111833650497c4687e6d",
+              "690a111833650497c4687e70"
+            ]
+          },
+          "nodeID": "690a111833650497c4687e47",
+          "coords": [
+            1253.4463412768248,
+            73.41018843368656
+          ]
+        },
+        "690a111833650497c4687e49": {
+          "type": "block",
+          "data": {
+            "name": "New Block 7",
+            "color": "",
+            "triggers": [],
+            "steps": [
+              "690a111833650497c4687e73"
+            ]
+          },
+          "nodeID": "690a111833650497c4687e49",
+          "coords": [
+            1291.1943813270516,
+            367.2834299279824
+          ]
+        },
+        "690a111833650497c4687e4b": {
+          "type": "block",
+          "data": {
+            "name": "New Block 9",
+            "color": "",
+            "triggers": [],
+            "steps": [
+              "690a111833650497c4687e77"
+            ]
+          },
+          "nodeID": "690a111833650497c4687e4b",
+          "coords": [
+            430.42986974172663,
+            711.3560698954019
+          ]
+        },
+        "690a111833650497c4687e4d": {
+          "type": "block",
+          "data": {
+            "name": "New Block 7",
+            "color": "",
+            "triggers": [],
+            "steps": [
+              "690a111833650497c4687e7a"
+            ]
+          },
+          "nodeID": "690a111833650497c4687e4d",
+          "coords": [
+            421.8955067635163,
+            1010.7966648322695
+          ]
+        },
+        "690a111833650497c4687e4f": {
+          "type": "block",
+          "data": {
+            "name": "New Block 8",
+            "color": "",
+            "triggers": [],
+            "steps": [
+              "690a111833650497c4687e7d"
+            ]
+          },
+          "nodeID": "690a111833650497c4687e4f",
+          "coords": [
+            1847.5361760189742,
+            289.4591597200446
+          ]
+        },
+        "690a111833650497c4687e51": {
+          "type": "code",
+          "data": {
+            "name": "",
+            "code": "try {\n  if (last_event?.type?.startsWith('DTMF ')) {\n    digit = last_event.type.slice(-1);\n\n    if (!isNaN(digit)) { // If the pressed key is a digit\n      code += digit;\n      code_length = code.length;\n\n      if (code.length === 11) {\n        caller_id = code;\n        if (caller_id.startsWith('07')) {\n          return 'complete';\n        } else {\n          return 'invalid';\n        }\n      }\n    } else if (digit === '#') { // If the pressed key is '#'\n      caller_id = code; // Use the accumulated digits as the caller_id\n      if (caller_id.startsWith('07')) {\n        return 'complete';\n      } else {\n        return 'invalid'; // If '#' is pressed but the number doesn't start with '07'\n      }\n    }\n  } else {\n    return 'notdtmf';\n  }\n} catch (error) {\n  js_error = error.toString();\n  return \"error\";\n}",
+            "paths": [
+              {
+                "label": "error",
+                "key": "f1g332oy"
+              },
+              {
+                "label": "complete",
+                "key": "cdeh3uia"
+              },
+              {
+                "label": "invalid",
+                "key": "el3m33un3"
+              }
+            ],
+            "portsV2": {
+              "byKey": {
+                "f1g332oy": {
+                  "type": "",
+                  "target": "690a111833650497c4687e6a",
+                  "id": "690a111833650497c4687e54",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          290.8921482991782,
+                          -111.6514993395325
+                        ]
+                      },
+                      {
+                        "point": [
+                          320.4221482991784,
+                          -111.6514993395325
+                        ]
+                      },
+                      {
+                        "point": [
+                          320.4221482991784,
+                          122.8085006604675
+                        ]
+                      },
+                      {
+                        "point": [
+                          349.95214829917836,
+                          122.8085006604675
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "cdeh3uia": {
+                  "type": "",
+                  "target": "690a111833650497c4687e3f",
+                  "id": "690a111833650497c4687e55",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          290.8921482991782,
+                          -57.1614993395325
+                        ]
+                      },
+                      {
+                        "point": [
+                          562.7121482991784,
+                          -57.1614993395325
+                        ]
+                      },
+                      {
+                        "point": [
+                          562.7121482991784,
+                          -532.6214993395325
+                        ]
+                      },
+                      {
+                        "point": [
+                          834.5321482991783,
+                          -532.6214993395325
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "el3m33un3": {
+                  "type": "",
+                  "target": "690a111833650497c4687e77",
+                  "id": "690a111833650497c4687e56",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          290.8921482991782,
+                          -2.671499339532488
+                        ]
+                      },
+                      {
+                        "point": [
+                          314.8921482991782,
+                          -2.671499339532488
+                        ]
+                      },
+                      {
+                        "point": [
+                          314.8921482991782,
+                          393.74850066046747
+                        ]
+                      },
+                      {
+                        "point": [
+                          240.25214829917832,
+                          393.74850066046747
+                        ]
+                      },
+                      {
+                        "point": [
+                          240.25214829917832,
+                          790.1785006604675
+                        ]
+                      },
+                      {
+                        "point": [
+                          264.2521482991783,
+                          790.1785006604675
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "690a111833650497c4687e64",
+                  "id": "690a111833650497c4687e53",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -41.46785170082171,
+                          -166.14149933953252
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -190.40785170082177,
+                          -166.14149933953252
+                        ]
+                      },
+                      {
+                        "point": [
+                          -190.40785170082177,
+                          135.0385006604675
+                        ]
+                      },
+                      {
+                        "point": [
+                          -339.3578517008217,
+                          135.0385006604675
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "690a111833650497c4687e67",
+                  "id": "690a111833650497c4687e52",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          290.9,
+                          51.81
+                        ]
+                      },
+                      {
+                        "point": [
+                          415.42,
+                          51.81
+                        ]
+                      },
+                      {
+                        "point": [
+                          415.42,
+                          342.18
+                        ]
+                      },
+                      {
+                        "point": [
+                          539.94,
+                          342.18
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a111833650497c4687e51"
+        },
+        "690a111833650497c4687e58": {
+          "type": "code",
+          "data": {
+            "name": "",
+            "code": "try {\n  read_back_caller_id = String(caller_id).split('').join(', ')\n  return 'complete'\n} catch (error) {\n  read_back_caller_id = caller_id\n  js_error = error.toString()\n  return \"error\"\n}",
+            "paths": [
+              {
+                "label": "complete",
+                "key": "o4qh3ccb"
+              },
+              {
+                "label": "error",
+                "key": "huqs3c1n"
+              }
+            ],
+            "portsV2": {
+              "byKey": {
+                "o4qh3ccb": {
+                  "type": "",
+                  "target": "690a111833650497c4687e47",
+                  "id": "690a111833650497c4687e5b",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1165.7121482991781,
+                          -371.58149933953246
+                        ]
+                      },
+                      {
+                        "point": [
+                          1253.4421482991781,
+                          -371.58149933953246
+                        ]
+                      },
+                      {
+                        "point": [
+                          1253.4421482991781,
+                          73.4085006604675
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "huqs3c1n": {
+                  "type": "",
+                  "target": "690a111833650497c4687e47",
+                  "id": "690a111833650497c4687e5c",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1165.7121482991781,
+                          -317.09149933953245
+                        ]
+                      },
+                      {
+                        "point": [
+                          1253.4421482991781,
+                          -317.09149933953245
+                        ]
+                      },
+                      {
+                        "point": [
+                          1253.4421482991781,
+                          73.4085006604675
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "690a111833650497c4687e5a",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          805.6121482991782,
+                          464.12850066046747
+                        ]
+                      },
+                      {
+                        "point": [
+                          947.0321482991783,
+                          464.12850066046747
+                        ]
+                      },
+                      {
+                        "point": [
+                          947.0321482991783,
+                          100.4085006604675
+                        ]
+                      },
+                      {
+                        "point": [
+                          1088.4421482991784,
+                          100.4085006604675
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "690a111833650497c4687e59",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          543.7521482991783,
+                          630.7985006604674
+                        ]
+                      },
+                      {
+                        "point": [
+                          816.1021482991782,
+                          630.7985006604674
+                        ]
+                      },
+                      {
+                        "point": [
+                          816.1021482991782,
+                          100.4085006604675
+                        ]
+                      },
+                      {
+                        "point": [
+                          1088.4421482991784,
+                          100.4085006604675
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a111833650497c4687e58"
+        },
+        "690a111833650497c4687e5e": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmg255r0e01353b7u7ib4uq08",
+                "type": "script",
+                "label": null,
+                "value": [
+                  "\"\""
+                ],
+                "variableID": "690a117fd2807b70a17a0297"
+              },
+              {
+                "id": "cmg256b72013m3b7u8dgizrbh",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "0"
+                    ]
+                  }
+                ],
+                "variableID": "690a1195d2807b70a17a02a2"
+              },
+              {
+                "id": "cmg2iyhv902wz3b7ukshnf375",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "false"
+                    ]
+                  }
+                ],
+                "variableID": "690a11b0d2807b70a17a02c5"
+              }
+            ],
+            "label": "",
+            "parallelExecution": true,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "690a111833650497c4687e5f"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a111833650497c4687e5e"
+        },
+        "690a111833650497c4687e61": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "690a1118f2acd509a79bc9d5",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "690a111833650497c4687e62"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a111833650497c4687e61"
+        },
+        "690a111833650497c4687e64": {
+          "type": "trace",
+          "data": {
+            "name": "DTMF",
+            "_v": 1,
+            "paths": [
+              {
+                "label": "default",
+                "isDefault": true
+              }
+            ],
+            "payload": {
+              "name": "DTMF",
+              "body": "",
+              "bodyType": "json",
+              "scope": "local",
+              "isBlocking": true
+            },
+            "defaultPath": 0,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "690a111833650497c4687e51",
+                  "id": "690a111833650497c4687e65",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -339.3578517008217,
+                          190.6785006604675
+                        ]
+                      },
+                      {
+                        "point": [
+                          -190.40785170082177,
+                          190.6785006604675
+                        ]
+                      },
+                      {
+                        "point": [
+                          -190.40785170082177,
+                          -220.87149933953248
+                        ]
+                      },
+                      {
+                        "point": [
+                          -41.46785170082171,
+                          -220.87149933953248
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "690a111833650497c4687e64"
+        },
+        "690a111833650497c4687e67": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "690a1118f2acd509a79bc9c9",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "690a111833650497c4687e68"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a111833650497c4687e67"
+        },
+        "690a111833650497c4687e6a": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "690a1118f2acd509a79bc9c6",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "690a111833650497c4687e6b"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a111833650497c4687e6a"
+        },
+        "690a111833650497c4687e6d": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "690a1118f2acd509a79bc9cc",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "690a111833650497c4687e6e",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a111833650497c4687e6d"
+        },
+        "690a111833650497c4687e70": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "690a1118f2acd509a79bc9cf",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "690a111833650497c4687e73",
+                  "id": "690a111833650497c4687e71",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1419.6321482991782,
+                          246.0185006604675
+                        ]
+                      },
+                      {
+                        "point": [
+                          1481.3721482991784,
+                          246.0185006604675
+                        ]
+                      },
+                      {
+                        "point": [
+                          1481.3721482991784,
+                          446.0985006604675
+                        ]
+                      },
+                      {
+                        "point": [
+                          1457.3721482991784,
+                          446.0985006604675
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a111833650497c4687e70"
+        },
+        "690a111833650497c4687e73": {
+          "type": "agent",
+          "data": {
+            "name": "Untitled agent",
+            "agentID": "690a139ad2807b70a17a033b",
+            "listenForOtherTriggers": true,
+            "exitEveryConversationalTurn": false,
+            "portsV2": {
+              "byKey": {
+                "690a13bed2807b70a17a0342": {
+                  "id": "690a13be13f83474463b2fa1",
+                  "target": "690a111833650497c4687e4f",
+                  "type": "",
+                  "data": {}
+                },
+                "690a13d5d2807b70a17a0345": {
+                  "id": "690a13d513f83474463b2fa3",
+                  "target": "690a111833650497c4687e41",
+                  "type": "",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a111833650497c4687e73"
+        },
+        "690a111833650497c4687e77": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "690a1118f2acd509a79bc9d8",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "690a111833650497c4687e4d",
+                  "id": "690a111833650497c4687e78",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          264.2521482991783,
+                          798.2585006604675
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          240.25214829917832,
+                          798.2585006604675
+                        ]
+                      },
+                      {
+                        "point": [
+                          240.25214829917832,
+                          904.5285006604676
+                        ]
+                      },
+                      {
+                        "point": [
+                          421.8921482991782,
+                          904.5285006604676
+                        ]
+                      },
+                      {
+                        "point": [
+                          421.8921482991782,
+                          1010.7985006604675
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a111833650497c4687e77"
+        },
+        "690a111833650497c4687e7a": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "690a1118f2acd509a79bc9d2",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "690a111833650497c4687e41",
+                  "id": "690a111833650497c4687e7b",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          255.71214829917835,
+                          1089.6185006604674
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -42.407851700821766,
+                          1089.6185006604674
+                        ]
+                      },
+                      {
+                        "point": [
+                          -42.407851700821766,
+                          -197.18149933953248
+                        ]
+                      },
+                      {
+                        "point": [
+                          -340.53785170082176,
+                          -197.18149933953248
+                        ],
+                        "reversed": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a111833650497c4687e7a"
+        },
+        "690a111833650497c4687e7d": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmg2izmce02yh3b7u0c7p123z",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "true"
+                    ]
+                  }
+                ],
+                "variableID": "690a11b0d2807b70a17a02c5"
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "690a111833650497c4687e7e"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a111833650497c4687e7d"
+        }
+      },
+      "offsetX": 1499.4655322169513,
+      "offsetY": 311.59265776222657,
+      "modified": 1762267404,
+      "variables": [],
+      "creatorID": 163967,
+      "_id": "690a110cf2acd509a79bc9c5",
+      "diagramID": "690a110cf2acd509a79bc9c5",
+      "versionID": "68f0f8e3f431dd17f721a0a5"
+    },
+    "64dbb6696a8fab0013dba195": {
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "nodes": {},
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1701833501,
+      "creatorID": 163967,
+      "variables": [],
+      "menuItems": [],
+      "_id": "68f0f8e3f431dd17f721a0a7",
+      "diagramID": "64dbb6696a8fab0013dba195",
+      "versionID": "68f0f8e3f431dd17f721a0a5"
+    },
+    "64dbb6696a8fab0013dba194": {
+      "name": "ROOT",
+      "type": "TOPIC",
+      "zoom": 136.13116646151994,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "68f0f9158ba27a57e888773e",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -287.35,
+                          158.63
+                        ]
+                      },
+                      {
+                        "point": [
+                          -209.94,
+                          158.63
+                        ]
+                      },
+                      {
+                        "point": [
+                          -209.94,
+                          53.59
+                        ]
+                      },
+                      {
+                        "point": [
+                          -132.52,
+                          53.59
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            -351.6816735414138,
+            136.63119334963568
+          ]
+        },
+        "68f0f9158ba27a57e888773e": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68f0f9798ba27a57e8887747",
+                  "id": "68f0f9158ba27a57e888773f",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "68f0f91ff431dd17f721a0c7"
+          },
+          "nodeID": "68f0f9158ba27a57e888773e"
+        },
+        "68f0f9158ba27a57e8887740": {
+          "type": "block",
+          "data": {
+            "name": "New Block 1",
+            "steps": [
+              "68f0f9158ba27a57e888773e"
+            ]
+          },
+          "nodeID": "68f0f9158ba27a57e8887740",
+          "coords": [
+            33.475488438626066,
+            -25.410435900353722
+          ]
+        },
+        "68f0f9798ba27a57e8887747": {
+          "type": "code",
+          "data": {
+            "name": "",
+            "code": "try {\n  const now = new Date();\n  // Store ISO date (YYYY-MM-DD)\n  current_date = now.toISOString().split('T')[0];\n  // Store local time (24-hour HH:MM)\n  current_time = now.toLocaleTimeString('en-US', { hour12: false });\n  caller_id = last_event.payload.userNumber\n  return \"Default\"\n} catch (error) {\n  js_error = error.toString();\n  return \"error\";\n}",
+            "paths": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "68f0f9f78ba27a57e8887761",
+                  "id": "68f0f9798ba27a57e8887748",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          685.07,
+                          25.68
+                        ]
+                      },
+                      {
+                        "point": [
+                          756.06,
+                          25.68
+                        ]
+                      },
+                      {
+                        "point": [
+                          756.06,
+                          -164.67
+                        ]
+                      },
+                      {
+                        "point": [
+                          827.05,
+                          -164.67
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "68f0f9798ba27a57e8887749"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f0f9798ba27a57e8887747"
+        },
+        "68f0f9798ba27a57e888774a": {
+          "type": "block",
+          "data": {
+            "name": "New Block 2",
+            "steps": [
+              "68f0f9798ba27a57e8887747"
+            ]
+          },
+          "nodeID": "68f0f9798ba27a57e888774a",
+          "coords": [
+            519.0737649397033,
+            -108.06546168777112
+          ]
+        },
+        "68f0f9f78ba27a57e8887761": {
+          "type": "agent",
+          "data": {
+            "name": "Untitled agent",
+            "agentID": "68f0fa28f431dd17f721a198",
+            "listenForOtherTriggers": true,
+            "exitEveryConversationalTurn": false,
+            "portsV2": {
+              "byKey": {
+                "68f0fa56f431dd17f721a1e5": {
+                  "id": "68f0fa568ba27a57e8887768",
+                  "target": "68f0fda98ba27a57e8887779",
+                  "type": "",
+                  "data": {}
+                },
+                "68f0faf1ddca33ae1f156b33": {
+                  "id": "68f0faf28ba27a57e888776a",
+                  "target": "68f0fb428ba27a57e8887770",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1159.05,
+                          6.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          1321.24,
+                          6.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          1321.24,
+                          393.25
+                        ]
+                      },
+                      {
+                        "point": [
+                          1297.24,
+                          393.25
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f0f9f78ba27a57e8887761"
+        },
+        "68f0f9f78ba27a57e8887762": {
+          "type": "block",
+          "data": {
+            "name": "New Block 3",
+            "steps": [
+              "68f0f9f78ba27a57e8887761"
+            ],
+            "color": "",
+            "triggers": []
+          },
+          "nodeID": "68f0f9f78ba27a57e8887762",
+          "coords": [
+            993.0486784394251,
+            -243.67136337025278
+          ]
+        },
+        "68f0fb428ba27a57e8887770": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "68f0fb42ddca33ae1f156b65",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68f0fb428ba27a57e8887771"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f0fb428ba27a57e8887770"
+        },
+        "68f0fb428ba27a57e8887772": {
+          "type": "block",
+          "data": {
+            "name": "New Block 4",
+            "steps": [
+              "68f0fb428ba27a57e8887770"
+            ],
+            "color": "#CB627B"
+          },
+          "nodeID": "68f0fb428ba27a57e8887772",
+          "coords": [
+            1131.2375496777636,
+            314.2500606948147
+          ]
+        },
+        "68f0fda98ba27a57e8887779": {
+          "type": "agent",
+          "data": {
+            "name": "Untitled agent",
+            "agentID": "68f0fdabddca33ae1f156cb3",
+            "listenForOtherTriggers": true,
+            "exitEveryConversationalTurn": false,
+            "portsV2": {
+              "byKey": {
+                "68f0fe9dddca33ae1f156d9a": {
+                  "id": "68f0fe9d8ba27a57e8887780",
+                  "target": "690a1d5713f83474463b317c",
+                  "type": "",
+                  "data": {}
+                },
+                "68f0feb7ddca33ae1f156db3": {
+                  "id": "68f0feb78ba27a57e8887782",
+                  "target": "68f0fee28ba27a57e8887784",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1817.71,
+                          -6.59
+                        ]
+                      },
+                      {
+                        "point": [
+                          1883.03,
+                          -6.59
+                        ]
+                      },
+                      {
+                        "point": [
+                          1883.03,
+                          337.72
+                        ]
+                      },
+                      {
+                        "point": [
+                          1859.03,
+                          337.72
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f0fda98ba27a57e8887779"
+        },
+        "68f0fda98ba27a57e888777a": {
+          "type": "block",
+          "data": {
+            "name": "New Block 5",
+            "steps": [
+              "68f0fda98ba27a57e8887779"
+            ]
+          },
+          "nodeID": "68f0fda98ba27a57e888777a",
+          "coords": [
+            1651.7059151829076,
+            -256.5862111495368
+          ]
+        },
+        "68f0fee28ba27a57e8887784": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68f0fee28ba27a57e8887785"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "68f0fee6ddca33ae1f156e06"
+          },
+          "nodeID": "68f0fee28ba27a57e8887784"
+        },
+        "68f0fee28ba27a57e8887786": {
+          "type": "block",
+          "data": {
+            "name": "New Block 6",
+            "steps": [
+              "68f0fee28ba27a57e8887784"
+            ],
+            "color": "#CB627B"
+          },
+          "nodeID": "68f0fee28ba27a57e8887786",
+          "coords": [
+            1693.0334280766165,
+            258.7162152438936
+          ]
+        },
+        "690a150113f83474463b2ff0": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "690a1501d2807b70a17a03cb",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "690a153213f83474463b2ffd",
+                  "id": "690a150113f83474463b2ff1",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a150113f83474463b2ff0"
+        },
+        "690a150113f83474463b2ff2": {
+          "type": "block",
+          "data": {
+            "name": "New Block 8",
+            "steps": [
+              "690a150113f83474463b2ff0"
+            ]
+          },
+          "nodeID": "690a150113f83474463b2ff2",
+          "coords": [
+            3829.8361999835292,
+            -436.7098687644248
+          ]
+        },
+        "690a153213f83474463b2ffc": {
+          "type": "component",
+          "data": {
+            "name": "",
+            "diagramID": "690a110cf2acd509a79bc9c5",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "690a153213f83474463b2ffe",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          3114.42,
+                          -175.24
+                        ]
+                      },
+                      {
+                        "point": [
+                          3205.75,
+                          -175.24
+                        ]
+                      },
+                      {
+                        "point": [
+                          3205.75,
+                          53.04
+                        ]
+                      },
+                      {
+                        "point": [
+                          3297.08,
+                          53.04
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a153213f83474463b2ffc"
+        },
+        "690a153213f83474463b2ffd": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "690a153213f83474463b2ffc",
+              "690a197a13f83474463b3118"
+            ]
+          },
+          "nodeID": "690a153213f83474463b2ffd",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "690a194413f83474463b310b": {
+          "type": "function",
+          "data": {
+            "inputMapping": {
+              "message": [
+                {
+                  "text": [
+                    "",
+                    {
+                      "variableID": "690a198ad2807b70a17a063d"
+                    },
+                    ""
+                  ]
+                }
+              ],
+              "toNumber": [
+                {
+                  "text": [
+                    "",
+                    {
+                      "variableID": "68f0f9d3f431dd17f721a126"
+                    },
+                    ""
+                  ]
+                }
+              ],
+              "fromNumber": [
+                {
+                  "text": [
+                    "+447307250223"
+                  ]
+                }
+              ],
+              "authToken": [
+                {
+                  "text": [
+                    "",
+                    {
+                      "secretID": "690a19cfd2807b70a17a067b"
+                    },
+                    ""
+                  ]
+                }
+              ],
+              "accountSID": [
+                {
+                  "text": [
+                    "<replace with Twillio Account SID>"
+                  ]
+                }
+              ]
+            },
+            "outputMapping": {},
+            "portsV2": {
+              "byKey": {
+                "__vf__default": {
+                  "type": "",
+                  "target": null,
+                  "id": "690a194413f83474463b310c"
+                },
+                "690a17249467990b08ddde5d": {
+                  "id": "690a194713f83474463b3114",
+                  "target": "690a19ee13f83474463b311d",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          4284.88,
+                          -0.05
+                        ]
+                      },
+                      {
+                        "point": [
+                          4308.88,
+                          -0.05
+                        ]
+                      },
+                      {
+                        "point": [
+                          4308.88,
+                          -78.93
+                        ]
+                      },
+                      {
+                        "point": [
+                          4258.62,
+                          -78.93
+                        ]
+                      },
+                      {
+                        "point": [
+                          4258.62,
+                          -157.81
+                        ]
+                      },
+                      {
+                        "point": [
+                          4282.62,
+                          -157.81
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "690a17249467990b08ddde5e": {
+                  "id": "690a194713f83474463b3115",
+                  "target": null,
+                  "type": ""
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "functionID": "690a17249467990b08ddde5c",
+            "name": "Twilio: Send SMS"
+          },
+          "nodeID": "690a194413f83474463b310b"
+        },
+        "690a194413f83474463b310d": {
+          "type": "block",
+          "data": {
+            "name": "New Block 9",
+            "steps": [
+              "690a194413f83474463b310b"
+            ]
+          },
+          "nodeID": "690a194413f83474463b310d",
+          "coords": [
+            4118.70140292626,
+            -166.67476897696832
+          ]
+        },
+        "690a197a13f83474463b3118": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmhkpsrjs00lo3b7udzom0xd4",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "Thanks ",
+                      {
+                        "variableID": "68f0fadaddca33ae1f156b0e"
+                      },
+                      "  for contacting us, please email your CV / Resume and cover letter to info@example.com"
+                    ]
+                  }
+                ],
+                "variableID": "690a198ad2807b70a17a063d"
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "690a194413f83474463b310d",
+                  "id": "690a197a13f83474463b3119",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          4457.45,
+                          -340.27
+                        ]
+                      },
+                      {
+                        "point": [
+                          4481.45,
+                          -340.27
+                        ]
+                      },
+                      {
+                        "point": [
+                          4481.45,
+                          -253.47
+                        ]
+                      },
+                      {
+                        "point": [
+                          4118.7,
+                          -253.47
+                        ]
+                      },
+                      {
+                        "point": [
+                          4118.7,
+                          -166.67
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a197a13f83474463b3118"
+        },
+        "690a19ee13f83474463b311d": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "690a19eed2807b70a17a068a",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "690a19ee13f83474463b311e"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a19ee13f83474463b311d"
+        },
+        "690a19ee13f83474463b311f": {
+          "type": "block",
+          "data": {
+            "name": "New Block 10",
+            "steps": [
+              "690a19ee13f83474463b311d"
+            ]
+          },
+          "nodeID": "690a19ee13f83474463b311f",
+          "coords": [
+            4448.806696387877,
+            -236.6323636584634
+          ]
+        },
+        "690a1d5713f83474463b317c": {
+          "type": "agent",
+          "data": {
+            "name": "Profession Agent",
+            "agentID": "690a0d7ed2807b70a17a00fc",
+            "listenForOtherTriggers": true,
+            "exitEveryConversationalTurn": false,
+            "portsV2": {
+              "byKey": {
+                "690a0e6ed2807b70a17a014f": {
+                  "id": "690a1d5a13f83474463b3183",
+                  "target": null,
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2401.47,
+                          -244.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          2520.23,
+                          -244.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          2520.23,
+                          -413.32
+                        ]
+                      },
+                      {
+                        "point": [
+                          2638.99,
+                          -413.32
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "690a0ecfd2807b70a17a0156": {
+                  "id": "690a1d5a13f83474463b3184",
+                  "target": null,
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2401.47,
+                          -190.99
+                        ]
+                      },
+                      {
+                        "point": [
+                          2520.23,
+                          -190.99
+                        ]
+                      },
+                      {
+                        "point": [
+                          2520.23,
+                          -413.32
+                        ]
+                      },
+                      {
+                        "point": [
+                          2638.99,
+                          -413.32
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "690a0ef8d2807b70a17a015c": {
+                  "id": "690a1d5a13f83474463b3185",
+                  "target": null,
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2401.47,
+                          -136.99
+                        ]
+                      },
+                      {
+                        "point": [
+                          2520.23,
+                          -136.99
+                        ]
+                      },
+                      {
+                        "point": [
+                          2520.23,
+                          -413.32
+                        ]
+                      },
+                      {
+                        "point": [
+                          2638.99,
+                          -413.32
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "690a1d5713f83474463b317c"
+        },
+        "690a1d5713f83474463b317d": {
+          "type": "block",
+          "data": {
+            "name": "New Block 10",
+            "steps": [
+              "690a1d5713f83474463b317c"
+            ]
+          },
+          "nodeID": "690a1d5713f83474463b317d",
+          "coords": [
+            2235.2847610887065,
+            -442.51662007311387
+          ]
+        }
+      },
+      "offsetX": 841.3453388331311,
+      "offsetY": 190.69504532029146,
+      "modified": 1701833501,
+      "creatorID": 163967,
+      "variables": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "_id": "68f0f8e3f431dd17f721a0a8",
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "versionID": "68f0f8e3f431dd17f721a0a5"
+    }
+  },
+  "flows": [
+    {
+      "id": "690a110cd2807b70a17a0241",
+      "name": "Caller ID confirmation",
+      "createdByID": 163967,
+      "folderID": null,
+      "diagramID": "690a110cf2acd509a79bc9c5",
+      "description": "",
+      "createdAt": "2025-11-04T14:43:24.000Z",
+      "updatedAt": "2025-11-05T15:41:23.000Z",
+      "updatedByID": 163967
+    }
+  ],
+  "entities": [],
+  "entityVariants": [],
+  "intents": [
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 163967,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-10-16T13:53:40.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedd9f",
+      "name": "No",
+      "createdByID": 163967,
+      "folderID": null,
+      "description": "Trigger this intent then the user responds negatively",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-10-16T13:53:40.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd1",
+      "name": "Yes",
+      "createdByID": 163967,
+      "folderID": null,
+      "description": "Trigger this intent when the user responds positively.",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-10-16T13:53:40.000Z",
+      "updatedByID": 163967
+    }
+  ],
+  "utterances": [
+    {
+      "id": "6797c2110cfd6c00ccbedda0",
+      "text": [
+        {
+          "text": [
+            "I'm good"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda1",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda2",
+      "text": [
+        {
+          "text": [
+            "I think I'm good thanks"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda3",
+      "text": [
+        {
+          "text": [
+            "Definitely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda4",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda5",
+      "text": [
+        {
+          "text": [
+            "Under no circumstances"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda6",
+      "text": [
+        {
+          "text": [
+            "Not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda7",
+      "text": [
+        {
+          "text": [
+            "Nope, not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda8",
+      "text": [
+        {
+          "text": [
+            "No way"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda9",
+      "text": [
+        {
+          "text": [
+            "By no means"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddaa",
+      "text": [
+        {
+          "text": [
+            "Not in the slightest"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddab",
+      "text": [
+        {
+          "text": [
+            "No chance"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddac",
+      "text": [
+        {
+          "text": [
+            "Absolutely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddad",
+      "text": [
+        {
+          "text": [
+            "Not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddae",
+      "text": [
+        {
+          "text": [
+            "Negative"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddaf",
+      "text": [
+        {
+          "text": [
+            "Sorry, no"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb0",
+      "text": [
+        {
+          "text": [
+            "Definitely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb1",
+      "text": [
+        {
+          "text": [
+            "That's wrong"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb2",
+      "text": [
+        {
+          "text": [
+            "Incorrect"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb3",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb4",
+      "text": [
+        {
+          "text": [
+            "No"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd2",
+      "text": [
+        {
+          "text": [
+            "Definitely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd3",
+      "text": [
+        {
+          "text": [
+            "Indeed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd4",
+      "text": [
+        {
+          "text": [
+            "Of course"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd5",
+      "text": [
+        {
+          "text": [
+            "Certainly"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd6",
+      "text": [
+        {
+          "text": [
+            "Without question"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd7",
+      "text": [
+        {
+          "text": [
+            "Sure"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd8",
+      "text": [
+        {
+          "text": [
+            "Definitely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd9",
+      "text": [
+        {
+          "text": [
+            "You bet"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddda",
+      "text": [
+        {
+          "text": [
+            "Without a doubt"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddb",
+      "text": [
+        {
+          "text": [
+            "By all means"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddc",
+      "text": [
+        {
+          "text": [
+            "Agreed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddd",
+      "text": [
+        {
+          "text": [
+            "Absolutely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddde",
+      "text": [
+        {
+          "text": [
+            "That's correct"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddf",
+      "text": [
+        {
+          "text": [
+            "Indeed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedde0",
+      "text": [
+        {
+          "text": [
+            "Affirmative"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedde1",
+      "text": [
+        {
+          "text": [
+            "You are right"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c3060cfd6c00ccbede5c",
+      "text": [
+        {
+          "text": [
+            "Correct"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c3080cfd6c00ccbede5d",
+      "text": [
+        {
+          "text": [
+            "Yep"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    },
+    {
+      "id": "6797c3090cfd6c00ccbede5e",
+      "text": [
+        {
+          "text": [
+            "Yes"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-10-16T13:53:40.000Z"
+    }
+  ],
+  "requiredEntities": [],
+  "folders": [],
+  "responses": [
+    {
+      "id": "68f0f91ff431dd17f721a0c7",
+      "name": "",
+      "createdByID": 163967,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-16T13:54:39.000Z",
+      "updatedAt": "2025-10-16T13:54:44.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "68f0fb42ddca33ae1f156b65",
+      "name": "",
+      "createdByID": 163967,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-16T14:03:46.000Z",
+      "updatedAt": "2025-10-16T14:04:17.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "68f0fee6ddca33ae1f156e06",
+      "name": "",
+      "createdByID": 163967,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-16T14:19:19.000Z",
+      "updatedAt": "2025-10-16T14:19:50.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a1118f2acd509a79bc9c6",
+      "name": "",
+      "createdByID": 163967,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-11-04T14:43:37.000Z",
+      "updatedAt": "2025-11-04T14:43:37.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a1118f2acd509a79bc9c9",
+      "name": "",
+      "createdByID": 163967,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-11-04T14:43:37.000Z",
+      "updatedAt": "2025-11-04T14:43:37.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a1118f2acd509a79bc9cc",
+      "name": "",
+      "createdByID": 163967,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-11-04T14:43:37.000Z",
+      "updatedAt": "2025-11-04T14:43:37.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a1118f2acd509a79bc9cf",
+      "name": "",
+      "createdByID": 163967,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-11-04T14:43:37.000Z",
+      "updatedAt": "2025-11-04T14:43:37.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a1118f2acd509a79bc9d2",
+      "name": "",
+      "createdByID": 163967,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-11-04T14:43:37.000Z",
+      "updatedAt": "2025-11-04T14:43:37.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a1118f2acd509a79bc9d5",
+      "name": "",
+      "createdByID": 163967,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-11-04T14:43:37.000Z",
+      "updatedAt": "2025-11-04T14:43:37.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a1118f2acd509a79bc9d8",
+      "name": "",
+      "createdByID": 163967,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-11-04T14:43:37.000Z",
+      "updatedAt": "2025-11-04T14:43:37.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a1501d2807b70a17a03cb",
+      "name": "",
+      "createdByID": 163967,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-11-04T15:00:17.000Z",
+      "updatedAt": "2025-11-04T15:00:38.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a19eed2807b70a17a068a",
+      "name": "",
+      "createdByID": 163967,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-11-04T15:21:19.000Z",
+      "updatedAt": "2025-11-04T15:21:43.000Z",
+      "updatedByID": 163967
+    }
+  ],
+  "responseMessages": [
+    {
+      "id": "690a1118f2acd509a79bc9ce",
+      "discriminatorID": "690a1118f2acd509a79bc9cd",
+      "text": [
+        {
+          "text": [
+            "Let me just read that number back to you"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    },
+    {
+      "id": "690a1118f2acd509a79bc9d1",
+      "discriminatorID": "690a1118f2acd509a79bc9d0",
+      "text": [
+        {
+          "text": [
+            "The number you entered was ",
+            {
+              "variableID": "690a135ed2807b70a17a0313"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            "Is that correct?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    },
+    {
+      "id": "690a1118f2acd509a79bc9d4",
+      "discriminatorID": "690a1118f2acd509a79bc9d3",
+      "text": [
+        {
+          "text": [
+            "ok, lets have another go"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    },
+    {
+      "id": "690a1118f2acd509a79bc9d7",
+      "discriminatorID": "690a1118f2acd509a79bc9d6",
+      "text": [
+        {
+          "text": [
+            "Please enter your full phone number using the keypad, followed by hash"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    },
+    {
+      "id": "690a1118f2acd509a79bc9da",
+      "discriminatorID": "690a1118f2acd509a79bc9d9",
+      "text": [
+        {
+          "text": [
+            "I need a number starting zero seven."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    },
+    {
+      "id": "690a1118f2acd509a79bc9cb",
+      "discriminatorID": "690a1118f2acd509a79bc9ca",
+      "text": [
+        {
+          "text": [
+            "There was a fail condition"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    },
+    {
+      "id": "690a1501d2807b70a17a03cd",
+      "discriminatorID": "690a1501d2807b70a17a03cc",
+      "text": [
+        {
+          "text": [
+            "So that we can contact you with great job offers, we will now ask for your phone number"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-11-04T15:00:17.000Z"
+    },
+    {
+      "id": "690a19eed2807b70a17a068c",
+      "discriminatorID": "690a19eed2807b70a17a068b",
+      "text": [
+        {
+          "text": [
+            "Thank you for calling. We've sent you a text with next steps. Please complete those and we will send you through suitable roles in the near future."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-11-04T15:21:19.000Z"
+    },
+    {
+      "id": "68f0f91ff431dd17f721a0c9",
+      "discriminatorID": "68f0f91ff431dd17f721a0c8",
+      "text": [
+        {
+          "text": [
+            "Hi There! You're through to Dylans Recruitment! Just for full disclosure, Im an AI that can help you get registered with us, and find you your next job.  Please speak clearly and keep in mind I might take a little longer to respond that a real person, so please bare with me. "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-16T13:54:39.000Z"
+    },
+    {
+      "id": "68f0fb42ddca33ae1f156b67",
+      "discriminatorID": "68f0fb42ddca33ae1f156b66",
+      "text": [
+        {
+          "text": [
+            "Thanks for calling, but without your name we cannot continue. Feel free to visit dylansrecruitment.com"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-16T14:03:46.000Z"
+    },
+    {
+      "id": "68f0fee6ddca33ae1f156e08",
+      "discriminatorID": "68f0fee6ddca33ae1f156e07",
+      "text": [
+        {
+          "text": [
+            "Thanks but I couldnt confirm if you are looking for work or not, and as such, I must direct you to dylansrecruitment.com"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-16T14:19:19.000Z"
+    },
+    {
+      "id": "690a1118f2acd509a79bc9c8",
+      "discriminatorID": "690a1118f2acd509a79bc9c7",
+      "text": [
+        {
+          "text": [
+            "There was an error.  ",
+            {
+              "variableID": "690a12c1d2807b70a17a02db"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    }
+  ],
+  "responseDiscriminators": [
+    {
+      "id": "690a1501d2807b70a17a03cc",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "690a1501d2807b70a17a03cb",
+      "variantOrder": [
+        "690a1501d2807b70a17a03cd"
+      ],
+      "createdAt": "2025-11-04T15:00:17.000Z"
+    },
+    {
+      "id": "690a1118f2acd509a79bc9c7",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "690a1118f2acd509a79bc9c6",
+      "variantOrder": [
+        "690a1118f2acd509a79bc9c8"
+      ],
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    },
+    {
+      "id": "690a1118f2acd509a79bc9ca",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "690a1118f2acd509a79bc9c9",
+      "variantOrder": [
+        "690a1118f2acd509a79bc9cb"
+      ],
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    },
+    {
+      "id": "690a1118f2acd509a79bc9cd",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "690a1118f2acd509a79bc9cc",
+      "variantOrder": [
+        "690a1118f2acd509a79bc9ce"
+      ],
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    },
+    {
+      "id": "690a1118f2acd509a79bc9d0",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "690a1118f2acd509a79bc9cf",
+      "variantOrder": [
+        "690a1118f2acd509a79bc9d1"
+      ],
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    },
+    {
+      "id": "690a1118f2acd509a79bc9d3",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "690a1118f2acd509a79bc9d2",
+      "variantOrder": [
+        "690a1118f2acd509a79bc9d4"
+      ],
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    },
+    {
+      "id": "690a1118f2acd509a79bc9d6",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "690a1118f2acd509a79bc9d5",
+      "variantOrder": [
+        "690a1118f2acd509a79bc9d7"
+      ],
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    },
+    {
+      "id": "690a1118f2acd509a79bc9d9",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "690a1118f2acd509a79bc9d8",
+      "variantOrder": [
+        "690a1118f2acd509a79bc9da"
+      ],
+      "createdAt": "2025-11-04T14:43:37.000Z"
+    },
+    {
+      "id": "690a19eed2807b70a17a068b",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "690a19eed2807b70a17a068a",
+      "variantOrder": [
+        "690a19eed2807b70a17a068c"
+      ],
+      "createdAt": "2025-11-04T15:21:19.000Z"
+    },
+    {
+      "id": "68f0f91ff431dd17f721a0c8",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f0f91ff431dd17f721a0c7",
+      "variantOrder": [
+        "68f0f91ff431dd17f721a0c9"
+      ],
+      "createdAt": "2025-10-16T13:54:39.000Z"
+    },
+    {
+      "id": "68f0fb42ddca33ae1f156b66",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f0fb42ddca33ae1f156b65",
+      "variantOrder": [
+        "68f0fb42ddca33ae1f156b67"
+      ],
+      "createdAt": "2025-10-16T14:03:46.000Z"
+    },
+    {
+      "id": "68f0fee6ddca33ae1f156e07",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f0fee6ddca33ae1f156e06",
+      "variantOrder": [
+        "68f0fee6ddca33ae1f156e08"
+      ],
+      "createdAt": "2025-10-16T14:19:19.000Z"
+    }
+  ],
+  "variables": [
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-10-16T13:53:40.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-10-16T13:53:40.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-10-16T13:53:40.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-10-16T13:53:40.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "locale",
+      "name": "locale",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+      "defaultValue": null,
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-10-16T13:53:40.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-10-16T13:53:40.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-10-16T13:53:40.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-10-16T13:53:40.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-10-16T13:53:40.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-10-16T13:53:40.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "68f0f9acf431dd17f721a0ee",
+      "name": "current_time",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-10-16T13:57:00.000Z",
+      "updatedAt": "2025-10-16T13:57:00.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "68f0f9d3f431dd17f721a126",
+      "name": "caller_id",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": "077884299100",
+      "createdAt": "2025-10-16T13:57:39.000Z",
+      "updatedAt": "2025-10-16T13:57:39.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "68f0fadaddca33ae1f156b0e",
+      "name": "callers_name",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-10-16T14:02:03.000Z",
+      "updatedAt": "2025-10-16T14:02:03.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "vf_date",
+      "name": "vf_date",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "date",
+      "description": "Current date in the format \"Jan 1, 2025\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T14:13:34.000Z",
+      "updatedAt": "2025-11-04T14:13:34.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "vf_time",
+      "name": "vf_time",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Current time in the format \"16:37\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T14:13:34.000Z",
+      "updatedAt": "2025-11-04T14:13:34.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "vf_day",
+      "name": "vf_day",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "Current day of month in the format \"1\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T14:13:34.000Z",
+      "updatedAt": "2025-11-04T14:13:34.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "vf_month",
+      "name": "vf_month",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Current month in the format \"January\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T14:13:34.000Z",
+      "updatedAt": "2025-11-04T14:13:34.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "vf_year",
+      "name": "vf_year",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "Current year in the format \"2025\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T14:13:34.000Z",
+      "updatedAt": "2025-11-04T14:13:34.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "vf_now",
+      "name": "vf_now",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "date",
+      "description": "Current date and time in the format \"Jan 1, 2025, 16:37\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T14:13:34.000Z",
+      "updatedAt": "2025-11-04T14:13:34.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "vf_user_timezone",
+      "name": "vf_user_timezone",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's timezone in the format \"America/Toronto\", if available. Defaults to the project timezone.",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T14:13:34.000Z",
+      "updatedAt": "2025-11-04T14:13:34.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a0ecbd2807b70a17a0151",
+      "name": "profession",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "the profession of the caller",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T14:33:47.000Z",
+      "updatedAt": "2025-11-04T14:33:47.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a117fd2807b70a17a0297",
+      "name": "code",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "a digit pressed on the users keypad",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T14:45:19.000Z",
+      "updatedAt": "2025-11-04T14:45:19.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a1195d2807b70a17a02a2",
+      "name": "code_length",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "the number of digits entered by the user",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T14:45:42.000Z",
+      "updatedAt": "2025-11-04T14:45:42.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a11b0d2807b70a17a02c5",
+      "name": "called_id_confirmed",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "boolean. If the caller id has been confirmed by the user",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T14:46:08.000Z",
+      "updatedAt": "2025-11-04T14:46:08.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a12c1d2807b70a17a02db",
+      "name": "js_error",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T14:50:42.000Z",
+      "updatedAt": "2025-11-04T14:50:42.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a135ed2807b70a17a0313",
+      "name": "read_back_caller_id",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T14:53:19.000Z",
+      "updatedAt": "2025-11-04T14:53:19.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a198ad2807b70a17a063d",
+      "name": "sms_text",
+      "createdByID": 163967,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "the text to send the user",
+      "defaultValue": null,
+      "createdAt": "2025-11-04T15:19:38.000Z",
+      "updatedAt": "2025-11-04T15:19:38.000Z",
+      "updatedByID": 163967
+    }
+  ],
+  "workflows": [
+    {
+      "id": "66df755be937eb000784abb2",
+      "name": "Start workflow",
+      "createdByID": 163967,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "assigneeID": null,
+      "description": "",
+      "createdAt": "2025-10-16T13:53:40.000Z",
+      "updatedAt": "2025-11-19T10:17:48.000Z",
+      "updatedByID": 163967
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "prompts": [],
+  "promptMessages": [],
+  "events": [],
+  "agents": [
+    {
+      "id": "68f0fa28f431dd17f721a198",
+      "name": "Name getter agent",
+      "createdByID": 163967,
+      "folderID": null,
+      "settings": {},
+      "description": "",
+      "instructions": [
+        {
+          "text": [
+            "# Objective"
+          ]
+        },
+        {
+          "text": [
+            "Get the callers name, and confirm you heard it correctly."
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "# Information"
+          ]
+        },
+        {
+          "text": [
+            "Caller id: ",
+            {
+              "variableID": "68f0f9d3f431dd17f721a126"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            "Current time: ",
+            {
+              "variableID": "68f0f9acf431dd17f721a0ee"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "68f0fa56f431dd17f721a1e5",
+        "68f0faf1ddca33ae1f156b33"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-10-16T13:59:04.000Z",
+      "updatedAt": "2025-10-16T14:03:30.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "68f0fdabddca33ae1f156cb3",
+      "name": "Job Seeker Status Confirmer",
+      "createdByID": 163967,
+      "folderID": null,
+      "settings": {},
+      "description": "",
+      "instructions": [
+        {
+          "text": [
+            "# Objective"
+          ]
+        },
+        {
+          "text": [
+            "- Confirm the caller is looking for work"
+          ]
+        },
+        {
+          "text": [
+            "- the outcome is either they are looking for work (or will be in the near future) OR they are NOT looking for work"
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "# Process"
+          ]
+        },
+        {
+          "text": [
+            "- First Check vf_memory and see if they have already indicated they are looking for work, if they have, then you dont need to say anything, just trigger the \"looking for work\" exit condition"
+          ]
+        },
+        {
+          "text": [
+            "- If they have NOT already indicated if they are looking for work, then ask \"Are you currently looking for work?\" and trigger the appropriate exit condition."
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                "# Guidance"
+              ]
+            },
+            {
+              "text": [
+                "- DO NOT ask questions, then NOT give the caller an opportunity to answer. It makes for a bad user experience, which we are trying to preserve"
+              ]
+            },
+            {
+              "text": [
+                {
+                  "text": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "# Information"
+          ]
+        },
+        {
+          "text": [
+            "Caller name: ",
+            {
+              "variableID": "68f0fadaddca33ae1f156b0e"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            "Current date: ",
+            {
+              "variableID": "68f0f9acf431dd17f721a0ee"
+            },
+            " "
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "68f0fe9dddca33ae1f156d9a",
+        "68f0feb7ddca33ae1f156db3"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-10-16T14:14:03.000Z",
+      "updatedAt": "2025-10-16T14:18:32.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a0d7ed2807b70a17a00fc",
+      "name": "Profession Agent",
+      "createdByID": 163967,
+      "folderID": null,
+      "settings": {},
+      "description": "",
+      "instructions": [
+        {
+          "text": [
+            "# Objective\n- Confirm which trade they are looking for work in.  (Check \"Process\") "
+          ]
+        },
+        {
+          "text": [
+            "- The outcome from this section is one of:"
+          ]
+        },
+        {
+          "text": [
+            "  - standard skills (as per the list below)"
+          ]
+        },
+        {
+          "text": [
+            "  - high value skill (as per the list below)"
+          ]
+        },
+        {
+          "text": [
+            "  - unknown skill (when the skill does not appear in either \"Standard skills\" or \"High value skills\""
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                "# Process"
+              ]
+            },
+            {
+              "text": [
+                "- Check vf_memory. If they have already mentioned their trade, do NOT ask them for their trade, just confirm what they have already indicated, and await their confirmation. "
+              ]
+            },
+            {
+              "text": [
+                "## Example"
+              ]
+            },
+            {
+              "text": [
+                "### vf_memory"
+              ]
+            },
+            {
+              "text": [
+                "My name is Dylan and Im a Joiner"
+              ]
+            },
+            {
+              "text": [
+                "### Your response"
+              ]
+            },
+            {
+              "text": [
+                "Dylan, you mentioned you are a joiner, is that correct?"
+              ]
+            },
+            {
+              "text": [
+                {
+                  "text": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "text": [
+                "- Once you have confirmation, check their trade against \"Standard Skills\" and \"High value skills\" below and trigger the appropriate exit condition. If the trade does not appear on either list, trigger the \"unknown\" exit condition."
+              ]
+            },
+            {
+              "text": [
+                "\nClassify the work they are looking for:\n# Standard skills:\n- Labourer / General Labourer / Skilled Labourer\n- Brick Layer / Brickie\n- Painter / Decorator\n- Joiner\n- Steel Worker\n- Ground Worker\n- Plumber\n- Electrician / Spark\n- Fork Lift Driver\n- Telehandler \n- Banksman\n- Slinger\n- Plasterer\n\n# High value skills:\n- Quantity Surveyor / Quantity surveying / QS\n- Commercial Manager\n- Site Manager\n- Project Manager\n- Planner\n- Design Manager\n- Estimator"
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "# Guidance"
+          ]
+        },
+        {
+          "text": [
+            "- Refer to them using their first name only"
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "# Current date"
+          ]
+        },
+        {
+          "text": [
+            "The users name is ",
+            {
+              "variableID": "68f0fadaddca33ae1f156b0e"
+            },
+            "  and they ARE looking for work\ncurrent date is: ",
+            {
+              "variableID": "vf_now"
+            },
+            " "
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "690a0e6ed2807b70a17a014f",
+        "690a0ecfd2807b70a17a0156",
+        "690a0ef8d2807b70a17a015c"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": false,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-11-04T14:28:14.000Z",
+      "updatedAt": "2025-11-05T15:12:05.000Z",
+      "updatedByID": 163967
+    },
+    {
+      "id": "690a139ad2807b70a17a033b",
+      "name": "confirmation agent",
+      "createdByID": 163967,
+      "folderID": null,
+      "settings": {},
+      "description": "",
+      "instructions": [
+        {
+          "text": [
+            "# Objective\n- Listen for affirmative comments like yes, yeah, correct, thats the one, yep, correct and so on. In which case trigger the \"affirmative\" exit condition\n- Listen for negative comments like no, nah, nope, no thats not right, incorrect and so on, in which case trigger the \"negative\" exit condition"
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "690a13bed2807b70a17a0342",
+        "690a13d5d2807b70a17a0345"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-11-04T14:54:18.000Z",
+      "updatedAt": "2025-11-04T14:55:17.000Z",
+      "updatedByID": 163967
+    }
+  ],
+  "agentAPITools": [],
+  "agentPathTools": [
+    {
+      "id": "68f0fa56f431dd17f721a1e5",
+      "name": "Name confirmed",
+      "agentID": "68f0fa28f431dd17f721a198",
+      "description": "When you have gathered the callers full name and confirmed you heard correctly",
+      "variableOrder": [
+        "68f0fadaddca33ae1f156b14"
+      ],
+      "createdAt": "2025-10-16T13:59:50.000Z"
+    },
+    {
+      "id": "68f0faf1ddca33ae1f156b33",
+      "name": "Name not confirmed",
+      "agentID": "68f0fa28f431dd17f721a198",
+      "description": "You could not confirm the callers name, or they refused to give it to you",
+      "variableOrder": [],
+      "createdAt": "2025-10-16T14:02:25.000Z"
+    },
+    {
+      "id": "68f0fe9dddca33ae1f156d9a",
+      "name": "looking for work",
+      "agentID": "68f0fdabddca33ae1f156cb3",
+      "description": "when the caller indicates they are currently looking for work, or will be very soon",
+      "variableOrder": [],
+      "createdAt": "2025-10-16T14:18:05.000Z"
+    },
+    {
+      "id": "68f0feb7ddca33ae1f156db3",
+      "name": "not looking for work",
+      "agentID": "68f0fdabddca33ae1f156cb3",
+      "description": "the caller indicates they are NOT looking for work, or you could establish if they are looking for work",
+      "variableOrder": [],
+      "createdAt": "2025-10-16T14:18:32.000Z"
+    },
+    {
+      "id": "690a0e6ed2807b70a17a014f",
+      "name": "Standard Skills",
+      "agentID": "690a0d7ed2807b70a17a00fc",
+      "description": "When the users stated profession is in the \"Standard professions\" list",
+      "variableOrder": [
+        "690a0ecbd2807b70a17a0152"
+      ],
+      "createdAt": "2025-11-04T14:32:14.000Z"
+    },
+    {
+      "id": "690a0ecfd2807b70a17a0156",
+      "name": "High value skill",
+      "agentID": "690a0d7ed2807b70a17a00fc",
+      "description": "The user's profession appears in High value skills list",
+      "variableOrder": [
+        "690a0eedd2807b70a17a015b"
+      ],
+      "createdAt": "2025-11-04T14:33:51.000Z"
+    },
+    {
+      "id": "690a0ef8d2807b70a17a015c",
+      "name": "unknown",
+      "agentID": "690a0d7ed2807b70a17a00fc",
+      "description": "When the profession cannot be classified as either standard or high value",
+      "variableOrder": [
+        "690a0f10d2807b70a17a015d"
+      ],
+      "createdAt": "2025-11-04T14:34:32.000Z"
+    },
+    {
+      "id": "690a13bed2807b70a17a0342",
+      "name": "affirmative",
+      "agentID": "690a139ad2807b70a17a033b",
+      "description": "the user confirms with an affirmative utterance",
+      "variableOrder": [],
+      "createdAt": "2025-11-04T14:54:54.000Z"
+    },
+    {
+      "id": "690a13d5d2807b70a17a0345",
+      "name": "negative",
+      "agentID": "690a139ad2807b70a17a033b",
+      "description": "when the user gives a negative utterance",
+      "variableOrder": [],
+      "createdAt": "2025-11-04T14:55:17.000Z"
+    }
+  ],
+  "agentFunctionTools": [],
+  "agentIntegrationTools": [],
+  "agentPathToolVariables": [
+    {
+      "id": "68f0fadaddca33ae1f156b14",
+      "kind": "variable",
+      "entityID": null,
+      "variableID": "68f0fadaddca33ae1f156b0e",
+      "description": "Populate with the callers name as its been confirmed",
+      "agentPathToolID": "68f0fa56f431dd17f721a1e5",
+      "createdAt": "2025-10-16T14:02:03.000Z"
+    },
+    {
+      "id": "690a0ecbd2807b70a17a0152",
+      "kind": "variable",
+      "entityID": null,
+      "variableID": "690a0ecbd2807b70a17a0151",
+      "description": null,
+      "agentPathToolID": "690a0e6ed2807b70a17a014f",
+      "createdAt": "2025-11-04T14:33:47.000Z"
+    },
+    {
+      "id": "690a0eedd2807b70a17a015b",
+      "kind": "variable",
+      "entityID": null,
+      "variableID": "690a0ecbd2807b70a17a0151",
+      "description": "",
+      "agentPathToolID": "690a0ecfd2807b70a17a0156",
+      "createdAt": "2025-11-04T14:34:21.000Z"
+    },
+    {
+      "id": "690a0f10d2807b70a17a015d",
+      "kind": "variable",
+      "entityID": null,
+      "variableID": "690a0ecbd2807b70a17a0151",
+      "description": null,
+      "agentPathToolID": "690a0ef8d2807b70a17a015c",
+      "createdAt": "2025-11-04T14:34:56.000Z"
+    }
+  ],
+  "agentMcpIntegrationTools": [],
+  "apiTools": [],
+  "apiToolInputVariables": [],
+  "integrationTools": [],
+  "functions": [
+    {
+      "id": "690a17249467990b08ddde5c",
+      "name": "Twilio: Send SMS",
+      "createdByID": 163967,
+      "folderID": null,
+      "code": "export default async function main(args) {\n  /**\n   * Function built by Juan Carlos Quintero - Moonside AI\n   * Website: https://moonside.ai\n   * YouTube: https://www.youtube.com/@juancarlosqr\n   * Voiceflow Certified Expert: https://www.voiceflow.com/contributors/juan-carlos-quintero\n   *\n   * Function to send SMS with Twilio's Messaging API\n   * Docs: https://www.twilio.com/docs/messaging/api/message-resource\n   *\n   * @param {string} message - SMS message content.\n   * @param {string} toNumber - Recipient's phone number (must be in E.164 format).\n   * @param {string} fromNumber - Twilio phone number (must be in E.164 format).\n   * @param {string} authToken - Twilio Auth Token.\n   * @param {string} accountSID - Twilio Account SID.\n   * @returns {string} response - The response body of the API call.\n   */\n\n  // Extract input variables\n  const { accountSID, authToken, fromNumber, toNumber, message } = args.inputVars;\n\n  // Trim input variables\n  const trimmedMessage = message.trim();\n  const trimmedToNumber = toNumber.trim();\n  const trimmedFromNumber = fromNumber.trim();\n  const trimmedAuthToken = authToken.trim();\n  const trimmedAccountSID = accountSID.trim();\n\n  // Validate input variables\n  if (!trimmedMessage || !trimmedToNumber || !trimmedFromNumber || !trimmedAuthToken || !trimmedAccountSID) {\n    return {\n      trace: [\n        {\n          type: 'debug',\n          payload: {\n            message: 'Twilio Function Error: All input variables are required and cannot be blank.'\n          }\n        }\n      ],\n      next: {\n        path: 'error'\n      }\n    };\n  }\n\n  try {\n    // Manually encode credentials in Base64\n    const credentials = base64Encode(`${trimmedAccountSID}:${trimmedAuthToken}`);\n\n    // Manually construct the form-urlencoded body\n    const body =\n      'From=' +\n      urlEncode(trimmedFromNumber) +\n      '&To=' +\n      urlEncode(trimmedToNumber) +\n      '&Body=' +\n      urlEncode(trimmedMessage);\n\n    // Set request URL\n    const requestUrl = `https://api.twilio.com/2010-04-01/Accounts/${trimmedAccountSID}/Messages.json`\n\n    // Send SMS via Twilio API\n    const response = await fetch(requestUrl, {\n      method: 'POST',\n      headers: {\n        'Authorization': `Basic ${credentials}`,\n        'Content-Type': 'application/x-www-form-urlencoded'\n      },\n      body,\n    });\n\n    // Extract JSON response\n    const responseBody = response.json;\n\n    // Check for Twilio API errors\n    if (response.status < 200 || response.status >= 300) {\n      return {\n        trace: [\n          {\n            type: 'debug',\n            payload: {\n              message: `Twilio API call error: ${JSON.stringify(responseBody)}`\n            }\n          }\n        ],\n        next: {\n          path: 'error'\n        }\n      };\n    }\n\n    // Return success response\n    return {\n      outputVars: {\n        response: JSON.stringify(responseBody),\n      },\n      trace: [\n        {\n          type: 'debug',\n          payload: {\n            message: 'Twilio API call successful: SMS sent'\n          }\n        }\n      ],\n      next: {\n        path: 'success'\n      }\n    };\n  } catch (error) {\n    // Handle fetch or unexpected errors\n    return {\n      trace: [\n        {\n          type: 'debug',\n          payload: {\n            message: `Twilio AI call exception: ${error.message}`\n          }\n        }\n      ],\n      next: {\n        path: 'error'\n      }\n    };\n  }\n\n  // Custom function to replace `encodeURIComponent`\n  function urlEncode(str) {\n    return str\n      .split('')\n      .map((char) => {\n        const code = char.charCodeAt(0);\n        if (\n          (code >= 48 && code <= 57) || // 0-9\n          (code >= 65 && code <= 90) || // A-Z\n          (code >= 97 && code <= 122) || // a-z\n          code === 45 || // -\n          code === 46 || // .\n          code === 95 || // _\n          code === 126 // ~\n        ) {\n          return char;\n        }\n        return '%' + code.toString(16).toUpperCase();\n      })\n      .join('');\n  };\n\n  // Custom base64 encoding function\n  function base64Encode(str) {\n    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';\n    let result = '';\n    let i = 0;\n    while (i < str.length) {\n      const a = str.charCodeAt(i++) || 0;\n      const b = str.charCodeAt(i++) || 0;\n      const c = str.charCodeAt(i++) || 0;\n\n      const triplet = (a << 16) | (b << 8) | c;\n\n      result +=\n        chars[(triplet >> 18) & 0x3f] +\n        chars[(triplet >> 12) & 0x3f] +\n        chars[(triplet >> 6) & 0x3f] +\n        chars[triplet & 0x3f];\n    }\n\n    const padding = str.length % 3;\n    return padding ? result.slice(0, padding - 3) + '==='.slice(padding) : result;\n  };\n}",
+      "image": "https://cm4-production-assets.s3.amazonaws.com/1738152216885-twilio-logo.png",
+      "description": "This function sends an SMS with Twilio",
+      "pathOrder": [
+        "690a17249467990b08ddde5d",
+        "690a17249467990b08ddde5e"
+      ],
+      "createdAt": "2025-11-04T15:09:25.000Z",
+      "updatedAt": "2025-11-04T15:09:25.000Z",
+      "updatedByID": 163967
+    }
+  ],
+  "functionPaths": [
+    {
+      "id": "690a17249467990b08ddde5d",
+      "name": "success",
+      "label": "Success",
+      "functionID": "690a17249467990b08ddde5c",
+      "createdAt": "2025-11-04T15:09:24.586Z"
+    },
+    {
+      "id": "690a17249467990b08ddde5e",
+      "name": "error",
+      "label": "Error",
+      "functionID": "690a17249467990b08ddde5c",
+      "createdAt": "2025-11-04T15:09:24.587Z"
+    }
+  ],
+  "functionVariables": [
+    {
+      "id": "690a17249467990b08ddde60",
+      "name": "authToken",
+      "type": "input",
+      "functionID": "690a17249467990b08ddde5c",
+      "description": "",
+      "createdAt": "2025-11-04T15:09:24.587Z"
+    },
+    {
+      "id": "690a17249467990b08ddde61",
+      "name": "fromNumber",
+      "type": "input",
+      "functionID": "690a17249467990b08ddde5c",
+      "description": "",
+      "createdAt": "2025-11-04T15:09:24.588Z"
+    },
+    {
+      "id": "690a17249467990b08ddde62",
+      "name": "toNumber",
+      "type": "input",
+      "functionID": "690a17249467990b08ddde5c",
+      "description": "",
+      "createdAt": "2025-11-04T15:09:24.589Z"
+    },
+    {
+      "id": "690a17249467990b08ddde64",
+      "name": "message",
+      "type": "input",
+      "functionID": "690a17249467990b08ddde5c",
+      "description": "",
+      "createdAt": "2025-11-04T15:09:24.590Z"
+    },
+    {
+      "id": "690a17249467990b08ddde63",
+      "name": "response",
+      "type": "output",
+      "functionID": "690a17249467990b08ddde5c",
+      "description": "Response body from Twilio API",
+      "createdAt": "2025-11-04T15:09:24.591Z"
+    },
+    {
+      "id": "690a17249467990b08ddde5f",
+      "name": "accountSID",
+      "type": "input",
+      "functionID": "690a17249467990b08ddde5c",
+      "description": "",
+      "createdAt": "2025-11-04T15:09:24.586Z"
+    }
+  ],
+  "mcpServers": [],
+  "mcpServerTools": [],
+  "mcpIntegrationTools": [],
+  "project": {
+    "type": "chat",
+    "name": "Recruitment Agent Call Taker",
+    "image": "",
+    "teamID": "wdEybLMxkV",
+    "members": [],
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 163967,
+    "updatedBy": 163967,
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "privacy": "public",
+    "apiPrivacy": "public",
+    "_id": "68f0f8e3f431dd17f721a0a4",
+    "updatedAt": "2025-11-19T14:56:22.089Z",
+    "devVersion": "68f0f8e3f431dd17f721a0a5",
+    "liveVersion": "68f0f8e3f431dd17f721a0a6"
+  },
+  "_version": "1.2",
+  "secrets": [
+    {
+      "assistantID": "68f0f8e3f431dd17f721a0a4",
+      "id": "690a19cfd2807b70a17a067b",
+      "updatedByID": null,
+      "name": "twilio_auth_code",
+      "visibility": "masked",
+      "updatedAt": "2025-11-04T15:20:47.000Z",
+      "createdAt": "2025-11-04T15:20:47.000Z"
+    }
+  ],
+  "variableStates": [],
+  "transcriptEvaluations": [
+    {
+      "name": "AI summary",
+      "default": true,
+      "description": null,
+      "type": "string",
+      "enabled": false,
+      "prompt": "Look at the transcript and provide a brief summary of the conversation. Make sure to highlight the outcome of the conversation, and key moments or topics, and the overall tone of the customer.",
+      "settings": null,
+      "systemTag": null
+    },
+    {
+      "name": "Deflection rate",
+      "default": true,
+      "description": null,
+      "type": "boolean",
+      "enabled": false,
+      "prompt": "Determine if the user requested to talk to a human in order to achieve their desired outcome.",
+      "settings": null,
+      "systemTag": null,
+      "truePrompt": "The user did not require the need to talk to a human.",
+      "falsePrompt": "The user required the need to talk to a human agent."
+    },
+    {
+      "name": "Satisfaction score",
+      "default": true,
+      "description": null,
+      "type": "number",
+      "enabled": false,
+      "prompt": "Rate the user's overall satisfaction based on the conversation, using a scale from 1 to 5.",
+      "settings": null,
+      "systemTag": null,
+      "minimumValue": 1,
+      "minimumPrompt": "Look for negative comments or expressions of dissatisfaction to rate the minimum satisfaction.",
+      "maximumValue": 5,
+      "maximumPrompt": "Identify any comments or phrases in the transcript that express the highest level of satisfaction."
+    }
+  ]
+}
